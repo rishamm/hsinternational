@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Navbar from '../components/Navbar'
 import Hero from '../components/shared/Hero'
 import Contactus from '../components/Contactus'
@@ -8,10 +8,19 @@ import shippingContainer from '../../public/hero/shipping contianer.png'
 import jobs from '../../public/hero/jobs.png'
 import skillmrigation from '../../public/hero/skill mrigation.png'
 import doctor from '../../public/hero/doctor.png'
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('./Export');
+  };
   return (
     <div>
+   
       <Navbar />
       <Hero image={image} text='Our Services' />
       <div className="bg-[#870000] text-white">
@@ -23,12 +32,17 @@ const Services = () => {
                 <p className="mb-4 font-normal  font-Montserrat ">
                   Citizenship by investment schemes allow families to obtain an alternate citizenship,
                   allowing them to travel freely to other destinations and live in another country.
-                  
+
                   Several countries throughout the world have some type of investor migration legislation in effect.
                   Approximately 30 residence and citizenship by investment initiatives are now in operation, with AL FAARTI Group handling many of them.
                 </p>
               </div>
-              <button className="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">View More</button>
+              <button
+                className="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded"
+                onClick={handleClick}
+              >
+                View More
+              </button>
             </div>
             <div className="md:w-1/3">
               <img src={shippingContainer} alt="Import & Export" className="w-full h-auto rounded" />
