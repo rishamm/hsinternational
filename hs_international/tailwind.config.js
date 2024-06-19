@@ -11,6 +11,7 @@ module.exports = withMT({
         'ineria-serif': ['"Ineria Serif"', 'serif'],
         'marcellus': ['Marcellus', 'serif'],
         'kanit': ['Kanit', 'sans'],
+      'Montserrat':['Montserrat','san'],
       },
     },
   },

@@ -45,3 +45,13 @@ export const card_2=[
       "logo":"/hero/our_vision 1.png"
     }
   ]
+
+  export const servicePage_data =[
+    {
+      "id":1,
+      "heading":"Import & Export",
+      "content":"Citizenship by investment schemes allow families to obtain an alternate citizenship, allowing them to travel freely to other destinations and live in another country. / Several countries throughout the world have some type of investor migration legislation in effect. Approximately 30 residence and/or citizenship by investment initiatives are now in operation, with AL FAATIR Group handling many of them."
+      ,
+      "img":""
+    }
+  ]
