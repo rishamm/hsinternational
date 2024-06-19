@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className={`bg-[url('/hero/footer.png')] bg-cover bg-center bg-no-repeat w-full   `}>
+    <div className={`bg-[url('/hero/footer.png')] bg-cover bg-center bg-no-repeat w-full bg-blend-darken bg-opacity-[0.6]  bg-[#000E41] `}>
        <div className=' flex flex-col  py-10 w-full h-full  px-16'>
        <div className={`grid lg:grid-cols-4  grid-cols-1  lg:gap-0 gap-10  py-10`}>
            <div className='flex text-white flex-col'>

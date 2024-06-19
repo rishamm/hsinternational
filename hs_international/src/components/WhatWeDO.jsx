@@ -1,34 +1,61 @@
-import React from 'react'
-import img from '/hero/image-3.png'
+import React from "react";
+import img from "/hero/image-sec.png";
 const WhatWeDO = () => {
-  const phoneNumber = '+917306661706'; 
-  const message = 'Hello! I would like to know more about your services 🎉'; 
+  const phoneNumber = "+917306661706";
+  const message = "Hello! I would like to know more about your services 🎉";
 
   const handleClick = () => {
-
-    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank");
   };
 
   return (
-    <div className='py-16 bg-[#3C3C3C] flex gap-10'>
-    <div className=' h-full   items-center  ml-10 lg:flex hidden'>
-        <img src={img} alt="" />
-    </div>
-    <div className='lg:w-[67%] flex flex-col gap-12'>
-        <div className='text-[#FFF5E0] font-marcellus border-b-2 border-white w-full pb-7' >
-            <h6 className='sm:text-5xl text-3xl sm:text-left text-center'>WHAT WE DO ?</h6>
+    <div
+      className={`h-[800px]  bg-[#870000] bg-[url('/hero/image-sec.png')] bg-no-repeat bg-right-top   lg:block flex justify-center items-center  overflow-hidden lg:relative`}
+    >
+      <div className="container mx-auto flex flex-col  lg:justify-end  w-full lg:gap-10 ">
+        <div className="text-[#FFF5E0] font-kanit w-full grid grid-cols-2 ">
+          <div></div>
         </div>
-        <p className='text-[#FFF5E0] font-marcellus lg:leading-8 xl:text-lg xl:leading-10  lg:text-base sm:text-2xl text-sm  leading-10  text-left p-3 sm:w-[90%]  '>
-        Embark on a journey of discovery with our comprehensive suite of services designed to make your dreams a reality. Whether you're seeking to study abroad, pursue career opportunities with a job visa, or start a new chapter with migration visa assistance, our experienced team is here to guide you every step of the way. Immerse yourself in new cultures, broaden your horizons, and build a brighter future with our tailored solutions. And for those seeking adventure, our curated tours and travel packages offer unforgettable experiences in every corner of the globe. Let us be your trusted partner in exploration and achievement. Your journey starts here.
-        Whether you're aspiring to pursue higher education overseas, seeking lucrative career prospects with a job visa, or planning a seamless transition to a new homeland through migration visa assistance, our dedicated team is committed to turning your aspirations into achievements. With personalized guidance and expert support, we simplify the complex processes involved in studying abroad, securing employment abroad, and relocating to a new country. Additionally, our meticulously crafted tours and travel packages promise unforgettable experiences, blending cultural immersion with unparalleled adventure. From exploring iconic landmarks to discovering hidden gems, let us curate the perfect itinerary for your next unforgettable journey. Embrace the world with confidence and embark on a transformative odyssey with us.
-        </p>
-        <div className='pl-3'>
-        <button className='text-white  hover:text-black hover:border-black  border-2 border-white rounded-md  font-ineria-serif  px-16 py-3' onClick={handleClick}>Know More</button>
+        <div className="lg:w-full lg:pl-24  lg:flex flex-col-2 gap-12">
+          <div></div>
+          <div className=" bg-white md:rounded-bl-3xl md:rounded-tl-3xl lg:grid lg:grid-cols-2 sm:grid sm:grid-cols-1 md:px-12 py-12 bg-opacity-[0.8] lg:absolute xl:top-40">
+            <div className="">
+              <img
+                src="/hero/image-th.png"
+                className="absolute hidden right-[50%] lg:block"
+                alt=""
+              />
+            </div>
+            <div className="flex flex-col gap-5">
+              <div className="flex justify-start ">
+                <h6 className="sm:text-4xl text-3xl sm:text-left font-kanit font-semibold  text-[#000E41] text-center">
+                  WHY CHOOSE US ?
+                </h6>
+              </div>
+              <div className=" flex flex-col-2 ">
+                <p className="  font-kanit text-[#000E41] lg:leading-8 xl:text-lg xl:leading-10  lg:text-base sm:text-2xl text-sm  leading-10  text-left  sm:w-[90%]  ">
+                  Embark on a journey of discovery with our comprehensive suite
+                  of services designed to make your dreams a reality. Whether
+                  you're seeking to study abroad, pursue career opportunities
+                  with a job visa, or start a new chapter with migration visa
+                  assistance, our experienced team is here to guide you every
+                  step of the way. Immerse yourself in new cultures, broaden
+                  your horizons, and build a brighter future with our tailored
+                  solutions. And for those seeking adventure, our curated tours
+                  and travel packages offer unforgettable experiences in every
+                  corner of the globe. Let us be your trusted partner in
+                  exploration and achievement. Your journey starts here.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default WhatWeDO
+export default WhatWeDO;

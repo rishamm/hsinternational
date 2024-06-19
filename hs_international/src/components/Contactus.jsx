@@ -85,26 +85,26 @@ const handleSubmit = async(e) => {
 
 console.log();
   return (
-    <div  className='h-[900px] bg-[#3C3C3C] grid lg:grid-cols-2 px-16 relative'>
+    <div  className='h-[900px] bg-[#000E41] grid lg:grid-cols-2 px-16 relative'>
          <div className=' border-b-2 left-0 top-36 border-b-[#DCD4C3] absolute w-[900px]'></div>
     <div className='flex flex-col gap-28'>
-    <div className='text-[#DCD4C3] md:text-5xl text-4xl font-marcellus   pt-12  pb-6 relative'>Contact Us
+    <div className='text-[#DCD4C3] md:text-5xl text-4xl font-kanit   pt-12  pb-6 relative'>Contact Us
     </div>
     <form ref={form}>
     <div className='w-full flex flex-col gap-10'>
   <div className='flex flex-col'>
-  <input type='text' value={data.name} placeholder='Name' name='name' onChange={(e)=>handlechange('name',e)} className='px-5 rounded md:w-3/4 text-white  h-[60px] bg-transparent border-2 font-ineria-serif'  />
+  <input type='text' value={data.name} placeholder='Name' name='name' onChange={(e)=>handlechange('name',e)} className='px-5 rounded md:w-3/4 text-white  h-[60px] bg-transparent border-2 font-kanit'  />
    {error.nameError && <span className='text-red-500'>{error.nameError}</span>}
   </div>
-  <div className='flex flex-col'> <input type='email' value={data.email} placeholder='Email' name='email' onChange={(e)=>handlechange('email',e)} className='px-5 rounded md:w-3/4  text-white  h-[60px] bg-transparent border-2 font-ineria-serif'  />
+  <div className='flex flex-col'> <input type='email' value={data.email} placeholder='Email' name='email' onChange={(e)=>handlechange('email',e)} className='px-5 rounded md:w-3/4  text-white  h-[60px] bg-transparent border-2 font-kanit'  />
    {error.emailError && <span className='text-red-500'>{error.emailError}</span>}</div>
-   <div className='flex flex-col'> <input type='text' value={data.phone}   placeholder='Phone' name='phone' onChange={(e)=>handlechange('phone',e)} className='px-5 rounded md:w-3/4 text-white   h-[60px] bg-transparent border-2 font-ineria-serif'  />
+   <div className='flex flex-col'> <input type='text' value={data.phone}   placeholder='Phone' name='phone' onChange={(e)=>handlechange('phone',e)} className='px-5 rounded md:w-3/4 text-white   h-[60px] bg-transparent border-2 font-kanit'  />
    {error.phoneError && <span className='text-red-500'>{error.phoneError}</span>}</div>
-   <div className='flex flex-col'>  <textarea type='text' value={data.message} placeholder='Message' name='message'  onChange={(e)=>handlechange('message',e)} className='px-5 rounded md:w-3/4 py-2 text-white  bg-transparent border-2 font-ineria-serif'  ></textarea>
+   <div className='flex flex-col'>  <textarea type='text' value={data.message} placeholder='Message' name='message'  onChange={(e)=>handlechange('message',e)} className='px-5 rounded md:w-3/4 py-2 text-white  bg-transparent border-2 font-kanit'  ></textarea>
    {error.messageError && <span className='text-red-500'>{error.messageError}</span>}</div>
  
    <div>
-   <button className='text-gray-600  font-ineria-serif  border-2 border-white rounded-md  px-16 py-3 hover:border-black hover:text-black' type='submit' onClick={(e)=>handleSubmit(e)} >Submit</button>
+   <button className='text-gray-600  font-kanit  border-2 border-white rounded-md  px-16 py-3 hover:border-black hover:text-black' type='submit' onClick={(e)=>handleSubmit(e)} >Submit</button>
     
    </div>
    </div>

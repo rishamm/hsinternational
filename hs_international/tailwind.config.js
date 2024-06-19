@@ -10,6 +10,7 @@ module.exports = withMT({
       fontFamily: {
         'ineria-serif': ['"Ineria Serif"', 'serif'],
         'marcellus': ['Marcellus', 'serif'],
+        'kanit': ['Kanit', 'sans'],
       },
     },
   },
