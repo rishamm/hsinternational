@@ -1,4 +1,3 @@
-
 import Navbar from '../components/Navbar'
 import Hero from '../components/shared/Hero'
 import Contactus from '../components/Contactus'
@@ -11,16 +10,21 @@ import doctor from '../../public/hero/doctor.png'
 import { useNavigate } from 'react-router-dom';
 
 
-
 const Services = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleExportClick = () => {
     navigate('./Export');
   };
+
+  const handleTravelClick = () => {
+    navigate('./Travel');
+  };
+
+
+
   return (
     <div>
-   
       <Navbar />
       <Hero image={image} text='Our Services' />
       <div className="bg-[#870000] text-white">
@@ -39,7 +43,7 @@ const Services = () => {
               </div>
               <button
                 className="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded"
-                onClick={handleClick}
+                onClick={handleExportClick}
               >
                 View More
               </button>
@@ -56,7 +60,7 @@ const Services = () => {
               <p className="mb-4 font-normal leading-7 font-Montserrat">
                 Residency Programs enable successful individuals to legally obtain a visa and live in a desired host country, without having full-time citizenship status. As a permanent resident, you and your family will be granted access to live, work and be educated in the host country, allowing you to provide a secure future for your family.Residency Programs offer a range of benefits including favorable tax regimes, global mobility, financial security and high quality education.
               </p>
-              <button className="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded">View More</button>
+              <button className="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded" onClick={handleTravelClick}>View More</button>
             </div>
           </section>
 
