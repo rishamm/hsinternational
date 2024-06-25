@@ -7,24 +7,27 @@ import Footer from '../components/Footer'
 const Export = () => {
   return (
     <div>
-        <Navbar/>
-        <Hero image={image}  text='Import & Export'/>
-        <div className='py-40 flex items-center justify-between  bg-[#870000]'>
-        <div className='container mx-auto text-white font-Montserrat font-normal  '>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus condimentum elit, non condimentum leo. Vestibulum non sapien vel odio accumsan consectetur. Nullam ut quam vel purus ullamcorper ultrices. Curabitur ac varius nisl. Maecenas dictum justo vel libero cursus, ac accumsan ligula congue. Integer vel enim eu arcu auctor egestas. Sed nec eros vitae quam vestibulum pulvinar. Suspendisse ut dictum odio.
+      <Navbar />
+      <Hero image={image} text='Import & Export' />
+      <div className='py-40 flex items-center justify-between  bg-[#870000]'>
+        <div className='container mx-auto text-white font-Montserrat  '>
+          <p >
+            HSL INTERNATIONAL , we specialize in delivering top-tier import and export services that connect businesses worldwide. Our comprehensive offerings include product sourcing, customs clearance, and logistics, all designed to streamline international trade and enhance your business efficiency. With a robust network of international partners and a keen understanding of global markets, we ensure seamless operations from start to finish.
+          </p>
 
+          <p className='mt-[20px]'>
+            In addition to import services, we excel in export solutions that drive your products to new markets. Our team conducts detailed market research to provide insights into your target destinations, assisting with all necessary export documentation and ensuring compliance with international regulations. Our reliable freight forwarding services ensure your goods reach their global destinations efficiently and securely.
+          </p>
 
-      <br/>
-      <br/>   <br/>
-      <br/>
+          <p className='mt-[20px]  '>
+            Wve have 10 years of experience in the industry, HSL INTERNATIONAL  has built a reputation for quality, integrity, and customer satisfaction. Our seasoned professionals are dedicated to providing personalized solutions that meet your specific needs, leveraging our global network to deliver cost-effective and reliable logistics. Trust us to be your partner in navigating the complexities of international trade, helping you achieve success in the global marketplace.
+          </p>
 
-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus condimentum elit, non condimentum leo. Vestibulum non sapien vel odio accumsan consectetur. Nullam ut quam vel purus ullamcorper ultrices. Curabitur ac varius nisl. Maecenas dictum justo vel libero cursus, ac accumsan ligula congue. Integer vel enim eu arcu auctor egestas. Sed nec eros vitae quam vestibulum pulvinar. Suspendisse ut dictum odio.
         </div>
       </div>
-    
-    <Footer/>
-    
+
+      <Footer />
+
     </div>
   )
 }
